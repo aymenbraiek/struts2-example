@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ *
+ */
+-->
+
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="structure" template="/WEB-INF/content/tiles/layout.jsp">
+        <put-attribute name="title" value="Arizona"/>
+        <put-attribute name="header" value="/WEB-INF/content/tiles/header.jsp"/>
+        <put-attribute name="navigation" value="/WEB-INF/content/tiles/navigation.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/content/tiles/welcome.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/content/tiles/footer.jsp"/>
+    </definition>
+    
+    <!-- Refatorar com wildcards
+    <definition name="providers-{1}" extends="structure">
+    	<put-attribute name="content" value="/WEB-INF/content/providers/{1}.jsp"/>
+    </definition>  -->
+    
+    <definition name="providers-index" extends="structure">
+    	<put-attribute name="content" value="/WEB-INF/content/providers/index.jsp"/>
+    </definition>
+    
+    <definition name="providers-editNew" extends="structure">
+    	<put-attribute name="content" value="/WEB-INF/content/providers/editNew.jsp"/>
+    </definition>
+    
+    <definition name="providers-edit" extends="structure">
+    	<put-attribute name="content" value="/WEB-INF/content/providers/edit.jsp"/>
+    </definition>
+    
+    <definition name="providers-show" extends="structure">
+    	<put-attribute name="content" value="/WEB-INF/content/providers/show.jsp"/>
+    </definition>
+    
+    <definition name="providers-deleteConfirm" extends="structure">
+    	<put-attribute name="content" value="/WEB-INF/content/providers/deleteConfirm.jsp"/>
+    </definition>
+    
+    <definition name="products-index" extends="structure">
+    	<put-attribute name="content" value="/WEB-INF/content/products/index.jsp"/>
+    </definition>
+    
+    <definition name="products-editNew" extends="structure">
+    	<put-attribute name="content" value="/WEB-INF/content/products/editNew.jsp"/>
+    </definition>
+    
+    <definition name="products-edit" extends="structure">
+    	<put-attribute name="content" value="/WEB-INF/content/products/edit.jsp"/>
+    </definition>
+    
+    <definition name="products-show" extends="structure">
+    	<put-attribute name="content" value="/WEB-INF/content/products/show.jsp"/>
+    </definition>
+    
+    <definition name="products-deleteConfirm" extends="structure">
+    	<put-attribute name="content" value="/WEB-INF/content/products/deleteConfirm.jsp"/>
+    </definition>
+
+</tiles-definitions>
