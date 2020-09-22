@@ -33,7 +33,7 @@
 	
 	<properties>
         <struts2.version>2.3.14.3</struts2.version>
-        <spring.version>3.2.4.RELEASE</spring.version>
+        <spring.version>5.2.9.RELEASE</spring.version>
         <tiles.version>2.0.6</tiles.version>
     </properties>
 
